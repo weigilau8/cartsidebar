@@ -1,0 +1,124 @@
+body {
+    margin: 0;
+    background-color: beige;
+}
+
+#sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: black;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    color: white;
+}
+
+#sidebar a {
+    padding: 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+    text-align: center;
+}
+
+#sidebar a:hover {
+    color: #f1f1f1;
+}
+
+#selectedItem {
+    padding: 20px;
+    font-size: 18px;
+    color: white;
+    text-align: center;
+    
+}
+
+#totalDisplay {
+    padding: 20px;
+    font-size: 18px;
+    color: white;
+    text-align: center;
+    
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center the content horizontally */
+    padding: 20px;
+}
+
+.card {
+    flex: 0 0 calc(23.33% - 20px); /* Updated width calculation */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    background-color: black;
+    margin: 10px;
+}
+
+#img {
+    width: 50%;
+    height: 50%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    color: beige;
+    text-align: center;
+    margin:auto;
+}
+
+button {
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: #3498db;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+@media (max-width: 1200px) {
+    .card {
+        flex: 0 0 calc(30% - 20px);
+    }
+}
+
+@media (max-width: 992px) {
+    .card {
+        flex: 0 0 calc(40% - 20px);
+    }
+}
+
+@media (max-width: 768px) {
+    .card {
+        flex: 0 0 calc(50% - 20px);
+    }
+}
+
+@media (max-width: 576px) {
+    .card {
+        flex: 0 0 calc(100% - 20px);
+    }
+}
